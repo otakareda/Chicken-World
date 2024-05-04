@@ -1,0 +1,235 @@
+كتابة كود منظم css
+https://elzero.org/css-formatting-guide/
+
+codepen كود بين
+
+box-shadow: 0 0 10px #ddd;
+
+Important Colors ,,matireal de	sgin
+#eef0f6 خلفية ابيض جميلة لما النص يكون ابيض عادي
+#2980b9 لبني
+#27ae60 اخضر
+#d35400 برتقالي
+#8e44ad بنفسجي
+#c0392b احمر غامق
+mediumturquoise تركواز
+---------------
+information
+inherit يعني بيورس الخواص من الاب في خواص بتتورث وخواص لا
+inisil يعني بيرجع للوضع الافتراضي بتاعه
+revert يعني بيرجع للوضع الافتراضي لليوزر ايجينت 
+unset بيتعامل بطريقتين لو ينفع يورث بيورث زي الانهيريت ولو مش هينفع بيبقى زي الانيشيل بيرجع للوضع الافتراضي
+framework واكتبها في كلاس ولما احب استعملها اكتب الكلاس في العنصر وبسcss اني اعمل مجموعة من اكواد 
+
+Cods :\
+
+caret-color= red; للتعديل علي مؤشر مكان الكتابه 
+pointer-events:none    للتعديل علي شكل المؤشر بتاع الموس
+--------------
+width:fit-content   عشان اخلي الباكجروند علي اد الكتابة بالظبط
+--------------
+contenteditable="true"; لجعل النص قابل للتعديل عليه
+--------------
+!impotant للتعديل علي كل الاكواد اجباري
+----------------
+text-shadow= 0 0 0 red
+----------------
+padding =50px
+text-align= center
+vertical-align= middle
+----------------
+text-decoration=none 
+----------------
+word-break = break-word عشان ينزل لتحت سطر لو لينك او خرج برا المربع
+----------------
+white-space= nowrap مينزلش لتحت سطر جديد
+float: left دي محتاجة معاها ال اوفر فلو
+overflow= hidden 
+text-overflow= ellipsis ثلاث نق ...
+WORD-SPACE=1PX مسافة بين الكلمات
+letter-spacing=1px مسافة بين الحروف
+----------------
+LINE-HIGHT=50% المسافة بين السطور
+TEXT-INDENT=50% مسافة هامش
+----------------
+border: solid;
+border-width: 0 0 10px 0;
+border-color: rgb(0, 116, 77);
+---------------
+FONT-WIGHT =BOLD
+font-family: lato;
+
+---------------
+opacity =.9 الشفافية لل backdrop
+--------------
+position = relative (z-index=) يكتب في العنصر الاب او يتحرك بناء علي نفسه فقط
+position = apsolute (z-index=) يكتب في العناصر المتحرك داخل الاب او العناصر بتركب فوق بعض
+position = fixed عشاان العنصر يتحرك معايا في الصفحة وقت الاسكرول 
+position = sticky  (Top=0) عشان وقت ما اعمل اسكرول واوصل للاستكي يلزق تحت النافيجاشن
+--------------
+list-style-type=
+list-style-position=
+list-style-img=
+list-sttle=none
+--------------
+a:hover عشان لما اقف علي الكلمة
+.a:checked + label عشان اعدل علي ال label 
+a:visited اللينك اللذي زورته من قبل 
+
+--------------
+border-radius=50% حواف دائرية
+لعمل نصف دائرة يجب ان يكون
+ الهيت نص الويدث 
+البوردر ريديس نصف ال هيت و
+height:100px
+width:200px
+border-radius=150px 150px 0 0;
+--------------
+transtion= width 1s, height 2s; الانتقال بالعنصر
+transtion-dueration
+transtion-delay
+transation:all .5s   shorthand
+transition: [property] [duration] [timing-function] [delay];
+
+--------------
+transform:scaley(1 , 1) انك تمط و تشد عنصر
+transform:scalex(-1 , -1)
+transform:scale( 1 ) لو كتبت واحد التانيه هتاخد قيمتها من الاولى
+transform:rotate(50 deg) or 1 turn سلف العنصر
+transform:scale(1.3) rotate(5deg)   shorthand
+opacity:.6;
+transform:translate(y,x)
+transform:skewX(30deg);
+transform:skewY(30deg);    للانحراف والميول
+transform:skew(30deg , 30deg);
+transform:matrix(scalex(), skewy() ,skewx, scaley() , transformx() , transformy())
+transform-origin:(X,Y,Z) لتحديد مركز العنصر 
+transfotm-rotate3d(0,0,1, 10deg)  بيلف الزاوية for 3D
+transfotm:TRANSLATE3d(0,0,100PX)  بيقرب ويبعد for 3D
+perspective:600px لازم تتكب في العنصر الاب عشان الترانسلات الثري دي تشتغل وفي نقطة تلاشي لما بزود العدد اكتر من البيرسبيكتيف
+perspective-grigin:left top 
+transform-style:preserve-3d   3Dليحفظ العنصر المقلوب فيي ال PARENTيجب ان يضع هذا في ال  
+
+--------------
+display : flex
+flex-deraction: raw,coulm -reverse
+felx-wrap: nowrap , wrap - reverse
+flex-flow : [direction] [wrap]
+justify-content:space-between
+justify-content:space-arround
+justify-content:center مهمتها ترتيب العناصر حسب الشكل المطلوب و توزيع المسافات
+justify-content:felx-start
+justify-content:felx-end
+--------------
+align-item:stretch
+align-item:flex-start  ينظم العناصر طوليا من الاعلى
+align-item:flex-end  ينظم العناصر طوليا من الاسفل
+align-item:center  ينظم العناصر طوليا في المنتصف
+--------------
+align-content:space-between
+align-content:space-arround   ينظم الكونتن كله بدون فراغات بينهم
+align-content:flex-start
+--------------
+لو عندي div و عاوز اخلي الكلام في المنتصف طول وعرض 
+display:flex
+justify-content:center   عرضيآ
+align-item:center        طوليآ
+
+or
+potition:absolute
+left50%
+top50%
+transform:transalate(-50% , -50%)
+--------------
+flex-shrenk:1 default مش هيحصل تغير لتصغير العناصر==3
+felx-grow:0  default  مش هيحصل تغير لتكبير العناصر==1
+order:5 لتبديل بين ترتيب العناصر
+--------------
+flex-basis:auto      الباسيس زي الويد= width 
+flex: [grow] [shrenk] [basis] 0 1 auto     شورت هاند للفليكس shrenk ,grow, basis
+--------------
+لو عاوز اخلي الفليكس بوك جنبه اي عناصر تانيه 
+يبقلى اخلي ال display : flex
+display:inline-flex
+--------------
+align-self:flex-end ,flex start ينظم عنصر بمفرده من وسط كذا عنصر معملهم align-content او align-items
+--------------
+الفلاتر
+filter: brightness(100%);
+o:hover{
+filter: brightness(0%)
+}
+--------------
+تدرج الالوان
+بحدد من اللون يبدا منين وينتهي امتي بالنسبة المئوية 
+background-img : liner-gradiant({to left or 180degree } {red من مساحة الكونتينر80%} {blue 20% من مساحة الكونتينر} ) 
+
+--------------
+display:grid   or inline-grid
+grid-template-columns:[px , auto , %, fraction [fr] , repeat(مساحتها , عدد الاعمدة)]  بتكون عدد الاعمده و مساحتها فنفس الوقت يعني لو كتبت 3 ارقام هيبقى 3 اعمده وكل عمود ليه مساحته اللي اتكتبت
+grid-template-row:[px , auto , %, fraction [fr] , repeat(مساحتها , عدد الاعمدة)]  بتكون عدد الاعمده و مساحتها فنفس الوقت يعني لو كتبت 3 ارقام هيبقى 3 اعمده وكل عمود ليه مساحته اللي اتكتبت
+gred-template-areas:"[name]" "[another name]"; بنكرر علي حسب العدد بتااع الاعمده والصفوف
+* مهم ان الareas بتتقسم علي حسب ال raw*
+لازم في كل عنصر او كلاس اكتب فيه اسم الجريد اللي هنادي عليه في ال جريد تيمبلت اريا عشان يفهم grid-area:[name]
+row-gap:
+column-gap:
+gap: 10px 10px short hand
+justify-content:  مش للفلكس بس بتشتغل معايا هنا عادي بس لازم تكون المساحة auto مش fr
+align-content:
+height: 100vh      عشان المتحتوي يملا الشاشة بكاملها طوليا viewpory height= vh
+grid-row: 1 / 8 العنصر ياخد كذا مكان عنصر في الصف
+grid-column: 1 / 8  العنصر ياخد كذا مكان عنصر في العمود
+grid-colmun:span 3 بياخد 2 اماكن و بيعمل wrap مش بيبوظ الجول
+grid-area:  to give name im grid-templetes-areas
+repeat(auto-fill , 200px)
+minmax(200px , 1fr)
+grid-templete-colmun:repeat(auto-fill , minmax(200px , 1fr))
+grid-template: [raw 1fr 50px] [column 20% 1fr]
+--------------
+for make vertical center
+align-height:center 
+line-height:0
+or 
+line-height= [height]
+--------------
+animation
+@keyframes [name]{
+0%{
+ backgroud-color:red;
+}
+50%{
+ backgroud-color:blue;
+}
+100%{
+ backgroud-color:green;
+}
+}
+ 
+المكان اللي عاوز اطبق عليه الانيميشن بتاعي لازم اكتب فيه العنصرين دول
+animation-name:change-color;
+animation-duration: 6s
+
+animation-iteration-count: infinate   or 2 ot 3	يعني الانيميشن يتعاد كام مره او يفضل يتعاد للابد
+animation-duration: 6s الوقت اللي بيتم فيه علميت الانينشن
+animation-timing-function: ease  or liner عملية الانيميشن تكون اولها سريع واخرها بطيق او كلها سرعه واحده بدون تقطيع
+animation-direc tion:reverse or alternate or alternate-reverse يعني عمليت الانيميشن تبدا من تحت لفوق وترجع من فوق لتحت تاني يعني لما تخلص ارجعها بسلاسة مره تاني
+animation-fill-mode: backwords or forwords or both اخر حاجة يقف عليها الانيميشن اخر حاجة وقف عليها
+animation-play-state:running or paused اخلي الانيميشن رنينج و مثلا اعمل الهوفر بتاعه بوثث
+animation:[name] 3s liner 2s infinate revesre       shorthand
+cubix-bezier اتعلمها هتعمل معجزات في عالم الانيميشن
+--------------
+
+
+--------------
+
+
+--------------
+
+
+--------------
+
+
+--------------
+
+
+--------------
