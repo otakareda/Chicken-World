@@ -1,0 +1,149 @@
+/* start global */
+:root {
+    --main-color: #2980b9;
+    --sec-color: #d35400;
+    --third-color: mediumturquoise;
+    --section-color: #eef0f6;
+    --main-padding: 20px;
+    --main-duration: .5s;
+}
+
+* {
+
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "cairo", sans-serif;
+
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #b9ce41;
+}
+
+table {
+    margin: 150px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    position: relative;
+    background-color: #356600;
+    box-shadow: 0 0 10px #b9ce41;
+
+}
+
+
+table thead tr:nth-child(2) {
+    background-color: #356600;
+}
+
+table thead tr:nth-child(1) {
+    background-color: #b9ce41;
+}
+
+
+table caption {
+    width: inherit;
+    background-color: #ffef5e;
+    top: -100px;
+    left: 100px;
+    padding: 20px;
+    border-radius: 3%;
+    font-size: 25px;
+    position: relative;
+    border: solid 4px #356600;
+    box-shadow: 0 0 10px #b9ce41;
+
+}
+
+table caption i {
+    margin: 0 100px;
+    font-size: 30px;
+    color: #4e5631;
+    animation: shaking 1.5s infinite;
+}
+
+table caption i::before {
+    background-color: #b9ce41;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    line-height: 47px;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #ffef5e;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #fffea1;
+}
+
+table tbody tr:hover {
+    transition: var(--main-duration);
+    background-color: #d35400;
+}
+
+.border {
+    height: 3445px;
+    width: 1320px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #000000;
+    position: absolute;
+    top: 195px;
+    left: 100px;
+    background-color: #f6af07;
+    box-shadow: 0 0 10px #b9ce41;
+
+}
+
+
+
+
+@keyframes shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {}
+
+    35% {
+        transform: rotate(-20deg)
+    }
+
+    50% {
+        transform: rotate(15deg)
+    }
+
+    60% {
+        transform: rotate(-13deg)
+    }
+
+    70% {
+        transform: rotate(10deg)
+    }
+
+    100% {
+        transform: rotate(0)
+    }
+}
