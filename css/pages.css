@@ -136,9 +136,9 @@
 }
 
 /* very large  */
-@media (min-width:1400px) {
+@media (min-width:1350px) {
     .container {
-        width: 1370px;
+        width: 1335px;
     }
 }
 
@@ -153,7 +153,7 @@
 
 .mediciene .card-containier {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 290px));
     gap: 43px;
     position: relative;
     padding: 200px 0 50px;
@@ -187,7 +187,7 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    box-shadow: 0 0 10px #ffc107;
     border-radius: 2rem;
 
 }
@@ -244,4 +244,125 @@
 }
 
 
-/* start mediciene page */
+/* end mediciene page */
+/* start chicks page */
+
+.chicks {
+    margin-bottom: 100px;
+}
+
+
+
+.chicks .card-containier {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column: 2;
+    gap: 50px;
+    position: relative;
+    padding: 200px 0 50px;
+}
+
+.chicks .card-containier:nth-child(odd)::before {
+    content: "";
+    z-index: -100;
+    width: 200%;
+    height: 100%;
+    background-color: var(--section-color);
+    position: absolute;
+    left: -300px;
+}
+
+
+
+.chicks .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 1.5s ease;
+    transform-style: preserve-3d;
+    height: 400px;
+
+}
+
+.chicks .card-containier .card .front-face,
+.back-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-shadow: 0 0 10px #ffc107;
+    border-radius: 2rem;
+
+}
+
+.chicks .card-containier .front-face .stars-holder {
+    position: absolute;
+    bottom: 315px;
+    left: 80%;
+    transform: translateX(-50%);
+    width: 175px;
+}
+
+
+.chicks .card-containier .front-face i {
+    color: #ffc107;
+    font-size: 25px;
+}
+
+
+
+
+.chicks .card-containier .card .chicks-name {
+    position: absolute;
+    bottom: 100px;
+    right: 107px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #d35400;
+
+}
+
+.chicks .card-containier .card .front-face {
+    background-image: url(../imgs/chicks/icons/3.jpg);
+    /* background-image: url(https://source.unsplash.com/random/300x400); */
+    width: 100%;
+
+}
+
+.chicks .card-containier .card .front-face img {
+    display: flex;
+    width: 70%;
+    position: absolute;
+    top: 78%;
+    transform: translateY(-50%);
+    left: 185px;
+
+}
+
+.chicks .card-containier .card .back-face {
+    background-color: #d35400;
+    transform: rotateY(180deg);
+    color: #356;
+}
+
+.chicks .card-containier .card .back-face h2 {
+    text-align: center;
+    font-weight: 900;
+}
+
+.chicks .card-containier .card .back-face p {
+    padding: 20px;
+    padding-top: 15px;
+    text-align: right;
+    font-weight: 900;
+    line-height: 22px;
+
+}
+
+.chicks .card-containier .card:hover {
+    transform: rotateY(180deg) translateY(-5px);
+    cursor: pointer;
+}
+
+
+/* end chicks page */

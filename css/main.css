@@ -146,7 +146,7 @@ a {
   transition: var(--main-transition);
   transform: translateY(20px);
   padding: 0;
-  border-radius: 4%;
+  border-radius: 6px;
   opacity: 0;
 
 }
@@ -175,13 +175,13 @@ a {
   font-weight: bold;
 }
 
-.header .links .schedule-dropbox li:nth-child(4) a {
+.header .links .schedule-dropbox li:nth-child(5) a {
   font-size: 15px;
   font-weight: 800;
   height: 50px;
 }
 
-.header .links .schedule-dropbox li:nth-child(3) i {
+.header .links .schedule-dropbox li:nth-child(4) i {
   font-size: 15px;
   padding-left: 7px;
 }
@@ -306,7 +306,7 @@ a {
   width: 300px;
   animation: up-and-down 5s linear infinite;
   position: relative;
-  border-radius: 2%;
+  border-radius: 10px;
 }
 
 .loby .container .go-down {
@@ -389,7 +389,7 @@ a {
   color: var(--main-color);
   font-weight: bold;
   font-size: 30px;
-  border-radius: 4%;
+  border-radius: 6px;
   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
   position: relative;
   transition: var(--main-transition);
@@ -571,6 +571,12 @@ a {
 
 }
 
+
+.footer .container .contact .social a i {
+  padding: 5px 9px 7px 0;
+  color: black;
+  font-size: 18px;
+}
 
 .footer .container .contact h2 {
   color: var(--main-color);
