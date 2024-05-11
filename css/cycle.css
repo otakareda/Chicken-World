@@ -1,11 +1,13 @@
 /* start global */
 :root {
-    --main-color: #2980b9;
-    --sec-color: #d35400;
-    --third-color: mediumturquoise;
+    --main-color: #d35400;
+    --sec-color: #ffef5e;
+    --third-color: #b9ce41;
+    --fourth-color: #f6af07;
+    --fourth-color: #356600;
     --section-color: #eef0f6;
     --main-padding: 20px;
-    --main-duration: .5s;
+    --main-transition: .5s;
 }
 
 * {
@@ -99,7 +101,7 @@ table tbody tr:nth-child(even) {
 }
 
 table tbody tr:hover {
-    transition: var(--main-duration);
+    transition: var(--main-transition);
     background-color: #d35400;
 }
 

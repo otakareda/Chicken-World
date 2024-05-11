@@ -1,11 +1,14 @@
 /* start global */
 :root {
-  --main-color: #2980b9;
-  --sec-color: #d35400;
-  --third-color: mediumturquoise;
+
+  --main-color: #d35400;
+  --sec-color: #ffef5e;
+  --third-color: #b9ce41;
+  --fourth-color: #f6af07;
+  --fourth-color: #356600;
   --section-color: #eef0f6;
   --main-padding: 20px;
-  --main-duration: .5s;
+  --main-transition: .5s;
 }
 
 * {
@@ -93,7 +96,7 @@ a {
 
 .header .logo {
   font-size: 26px;
-  color: var(--sec-color);
+  color: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +113,7 @@ a {
 
 .header .links li {
   position: relative;
-  transition: var(--main-duration);
+  transition: var(--main-transition);
 }
 
 .header .links li:hover {
@@ -120,7 +123,7 @@ a {
 
 .header .links>li>a {
   padding: 0 15px;
-  color: var(--sec-color);
+  color: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,10 +143,11 @@ a {
   right: 0px;
   background-color: white;
   z-index: -100;
-  transition: var(--main-duration);
+  transition: var(--main-transition);
   transform: translateY(20px);
   padding: 0;
   border-radius: 4%;
+  opacity: 0;
 
 }
 
@@ -163,8 +167,8 @@ a {
   display: flex;
   width: 100%;
   padding: 15px 15px 15px 0px;
-  color: var(--sec-color);
-  transition: var(--main-duration);
+  color: var(--main-color);
+  transition: var(--main-transition);
   font-weight: 700;
   display: block;
   font-size: 17px;
@@ -201,7 +205,7 @@ a {
   width: 0;
   height: 100%;
   z-index: -1;
-  transition: var(--main-duration);
+  transition: var(--main-transition);
 }
 
 .header .links .schedule-dropbox li:hover {
@@ -224,6 +228,7 @@ a {
 .header .links li:hover .schedule-dropbox {
   z-index: 100;
   transform: translateY(0px);
+  opacity: 1;
 
 }
 
@@ -270,7 +275,7 @@ a {
 
 .loby .text {
   flex: 1;
-  color: var(--sec-color);
+  color: var(--main-color);
 }
 
 .loby h2 {
@@ -309,7 +314,7 @@ a {
   top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--sec-color);
+  color: var(--main-color);
   animation: bouncing 1.5s infinite;
 }
 
@@ -334,7 +339,7 @@ a {
 }
 
 .videosec .text {
-  background-color: black;
+  background-color: #d35400;
   width: 100%;
   height: 50px;
   position: absolute;
@@ -381,13 +386,13 @@ a {
   background-color: white;
   height: 71px;
   line-height: 70px;
-  color: var(--sec-color);
+  color: var(--main-color);
   font-weight: bold;
   font-size: 30px;
   border-radius: 4%;
   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
   position: relative;
-  transition: var(--main-duration);
+  transition: var(--main-transition);
 }
 
 .videosec .pages a::before {
@@ -396,7 +401,7 @@ a {
 }
 
 .videosec .pages a:hover {
-  background-color: var(--sec-color);
+  background-color: var(--main-color);
   color: var(--section-color);
 }
 
@@ -470,7 +475,7 @@ a {
   font-size: 40px;
   margin: 50px auto;
   width: fit-content;
-  color: var(--sec-color);
+  color: var(--main-color);
 }
 
 .market .container .box .info h2 {
@@ -485,7 +490,7 @@ a {
   content: "";
   height: 2px;
   width: calc(100% - 30px);
-  background-color: var(--sec-color);
+  background-color: var(--main-color);
   position: absolute;
   bottom: -15px;
   left: 15px;
@@ -500,31 +505,47 @@ a {
 }
 
 .market .container .box a {
-  color: var(--sec-color);
-  border-color: var(--sec-color);
+  color: var(--main-color);
+  border-color: var(--main-color);
   background-color: white;
   border-radius: 6px;
   border-style: solid;
   border-width: 3px;
-  border-color: var(--sec-color);
+  border-color: var(--main-color);
   padding: 7px 20px;
-  transition: var(--main-duration);
+  transition: var(--main-transition);
   display: flex;
   align-content: center;
   font-weight: bold;
   font-size: 18px;
   margin-right: 10px;
   margin-left: 10px;
+
 }
 
+.market .container .box:not(:nth-child(2)) a {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: calc(100% - 60px); */
+
+}
+
+
 .market .container .box a:hover span {
+  transition: var(--main-transition);
+}
+
+.market .container .box:nth-child(2) a:hover span {
   transform: translateX(115px);
-  transition: var(--main-duration);
+
+
 }
 
 .market .container .box a:hover {
   color: white;
-  background-color: var(--sec-color);
+  background-color: var(--main-color);
   border-color: white;
   height: 40px;
 }
@@ -552,13 +573,20 @@ a {
 
 
 .footer .container .contact h2 {
-  color: var(--sec-color);
+  color: var(--main-color);
 
 }
 
 .footer .container .pages h2 {
-  color: var(--sec-color);
+  color: var(--main-color);
 
+}
+
+.footer .pages a {
+  color: black;
+  display: block;
+  margin-bottom: 15px;
+  width: fit-content;
 }
 
 .footer .footer-text {
@@ -570,9 +598,14 @@ a {
 
 }
 
+.footer .imgs .footerimgs img {
+  box-shadow: 0 0 10px #ddd;
+
+}
+
 .footer .footer-text span {
 
-  color: var(--sec-color);
+  color: var(--main-color);
   font-size: 30px;
   line-height: 33px;
 }

@@ -1,0 +1,247 @@
+/* start label  */
+.label-holder {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.label {
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #356600;
+    background-color: #ffef5e;
+    box-shadow: 0 0 10px #b9ce41;
+    padding: 10px 20px;
+    position: relative;
+    margin: 100px auto 100px auto;
+    width: fit-content;
+    text-align: center;
+    color: #4e5631;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.label span {
+    position: relative;
+    z-index: 10;
+}
+
+.label::before {
+    content: "";
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #d35400;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px;
+    box-shadow: 0 0 10px #b9ce41;
+    transition: 1s;
+    box-shadow: none;
+}
+
+.label::after {
+    content: "";
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #d35400;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+    box-shadow: 0 0 10px #b9ce41;
+    transition: 1s;
+    box-shadow: none;
+
+}
+
+.label:hover::before {
+    left: 0;
+    /* width: 50%;
+    height: 100%;
+    border-radius: 0; */
+    animation: dotwidth .5s linear forwards;
+}
+
+.label:hover::after {
+    right: 0;
+    /* width: 50%;
+    height: 100%;
+    border-radius: 0; */
+    animation: dotwidth .5s linear forwards;
+
+}
+
+.label:hover {
+    border-color: white;
+    transition-delay: .5s;
+    color: var(--sec-color);
+}
+
+@keyframes dotwidth {
+
+    0%,
+    50%,
+    70% {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+    }
+
+    80%,
+    100% {
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+        transition: 2s;
+    }
+}
+
+/* start label  */
+
+@media (max-width:767px) {
+    .special-heading {
+        margin-bottom: 12px;
+    }
+}
+
+/* small  */
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* mediam */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large  */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* very large  */
+@media (min-width:1400px) {
+    .container {
+        width: 1370px;
+    }
+}
+
+
+/* start mediciene page */
+
+.mediciene {
+    margin-bottom: 100px;
+}
+
+
+
+.mediciene .card-containier {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+    gap: 43px;
+    position: relative;
+    padding: 200px 0 50px;
+}
+
+.mediciene .card-containier:nth-child(odd)::before {
+    content: "";
+    z-index: -100;
+    width: 200%;
+    height: 100%;
+    background-color: var(--section-color);
+    position: absolute;
+    left: -300px;
+}
+
+
+
+.mediciene .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 1.5s ease;
+    transform-style: preserve-3d;
+    height: 400px;
+
+}
+
+.mediciene .card-containier .card .front-face,
+.back-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    border-radius: 2rem;
+
+}
+
+.mediciene .card-containier .front-face .stars-holder {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 175px;
+}
+
+
+.mediciene .card-containier .front-face i {
+    color: #ffc107;
+    font-size: 30px;
+}
+
+
+
+.mediciene .card-containier .card .front-face img {
+    display: flex;
+    width: 120%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 85px;
+}
+
+.mediciene .card-containier .card .front-face {
+    background-image: url(../imgs/icons/king2.jpg);
+    /* background-image: url(https://source.unsplash.com/random/300x400); */
+    width: 100%;
+}
+
+.mediciene .card-containier .card .back-face {
+    background-color: #bababa;
+    transform: rotateY(180deg);
+}
+
+.mediciene .card-containier .card .back-face h2 {
+    text-align: center;
+}
+
+.mediciene .card-containier .card .back-face p {
+    padding: 20px;
+    padding-top: 0;
+
+}
+
+.mediciene .card-containier .card:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+
+/* start mediciene page */
