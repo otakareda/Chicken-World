@@ -137,7 +137,11 @@
 
 /* very large  */
 @media (min-width:1350px) {
-    .container {
+    .mediciene .container {
+        width: 1335px;
+    }
+
+    .chicks .container {
         width: 1335px;
     }
 }
