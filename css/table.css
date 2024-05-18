@@ -154,90 +154,6 @@ table tbody tr:hover {
 }
 
 
-@media (max-width:767px) {
-    .header {
-        height: 50px;
-    }
-
-    .header .logo {
-        font-size: 14px;
-        position: absolute;
-        left: 20px;
-        top: 0px;
-    }
-
-    .header .links {
-        font-size: 14px;
-        padding-left: 0;
-        position: absolute;
-        right: 0;
-        top: 0px;
-    }
-
-
-    .border {
-        height: 3020px;
-        width: 420px;
-        top: 370px;
-        left: 15px;
-    }
-
-    table caption {
-        left: 0;
-        width: 370px;
-        font-size: 20px;
-    }
-
-    .temperature .border {
-        height: 2850px;
-        width: 420px;
-        top: 240px;
-        left: 5px;
-    }
-
-    .weight .border {
-        height: 3400px;
-        width: 420px;
-        top: 240px;
-        left: 5px;
-    }
-
-    table caption i::before {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-    }
-
-    table caption i {
-        margin: 0 5px;
-        font-size: 20px;
-    }
-
-
-
-    .footer {
-        padding: 0 0 15px 0px;
-    }
-
-    .footer .imgs {
-        padding-top: 25px;
-
-    }
-
-    .footer .imgs .footerimgs img {
-        width: 48%;
-    }
-
-    .footer .container {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        gap: 10px;
-    }
-
-    .footer .container .contact .social a i {
-        padding: 5px 20px 7px 0;
-    }
-}
-
 
 
 @keyframes shaking {
@@ -265,5 +181,117 @@ table tbody tr:hover {
 
     100% {
         transform: rotate(0)
+    }
+}
+
+
+
+
+@media (max-width:767px) {
+    .header {
+        height: 50px;
+    }
+
+    .header .logo {
+        font-size: 14px;
+        position: absolute;
+        left: 20px;
+        top: 0px;
+    }
+
+    .header .links {
+        font-size: 14px;
+        padding-left: 0;
+        position: absolute;
+        right: 0;
+        top: 0px;
+    }
+
+    .header .links .schedule-dropbox li i {
+        padding-right: 5px;
+        padding-left: 8px;
+    }
+
+    .header .links .schedule-dropbox a {
+        padding: 15px 0px 15px 0px;
+        font-size: 13.8px;
+    }
+
+
+
+    .border {
+        height: 3020px;
+        width: 420px;
+        top: 370px;
+        left: 15px;
+    }
+
+    table caption {
+        left: 0;
+        width: 370px;
+        font-size: 20px;
+    }
+
+
+
+    .temperature table caption i::before {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .weight table caption i::before {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .temperature table caption i {
+        margin: 0 5px;
+        font-size: 20px;
+    }
+
+    .weight table caption i {
+        margin: 0 5px;
+        font-size: 20px;
+    }
+
+
+    .temperature .border {
+        height: 2850px;
+        width: 400px;
+        top: 250px;
+        left: 6px;
+    }
+
+    .weight .border {
+        height: 3495px;
+        width: 400px;
+        top: 250px;
+        left: 6px;
+    }
+
+
+
+    .footer {
+        padding: 0 0 15px 0px;
+    }
+
+    .footer .imgs {
+        padding-top: 25px;
+
+    }
+
+    .footer .imgs .footerimgs img {
+        width: 48%;
+    }
+
+    .footer .container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .footer .container .contact .social a i {
+        padding: 5px 20px 7px 0;
     }
 }
