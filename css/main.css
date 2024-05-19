@@ -784,6 +784,8 @@ a {
 /* start media for mobile  */
 
 
+
+
 @media (min-width:768px) {
   .market .container {
     grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
@@ -1027,6 +1029,178 @@ a {
   .footer .container .contact .social a i {
     padding: 5px 20px 7px 0;
   }
+
+}
+
+
+@media (max-width:420px) {
+  .header .links {
+    font-size: 12px;
+  }
+
+  .header .logo {
+    font-size: 13px;
+    font-weight: 900;
+  }
+
+  .header .links>li>a {
+    padding: 0 5px;
+    height: 50px;
+
+  }
+
+  .header .links .schedule-dropbox li:first-child a::before {
+
+    top: -28px;
+    right: -200px;
+  }
+
+  .header .links .schedule-dropbox {
+
+    right: 6px;
+  }
+
+  /* emportant   */
+  .header .links li .schedule-dropbox {
+    display: grid;
+    grid-template-columns: 32% 36% 32%;
+  }
+
+  .header .links .schedule-dropbox li {
+    font-size: 15px;
+    font-weight: 800;
+    height: 50px;
+    width: 110px;
+  }
+
+  .header .links .schedule-dropbox li:nth-child(5) a i {
+
+    padding-left: 4px;
+
+
+  }
+
+
+
+  .header .links .schedule-dropbox li:nth-child(2) a {
+    font-size: 15px;
+    height: 50px;
+    width: 115px;
+    border-style: solid;
+    border-width: 0 2px 0 2px;
+    border-color: #ccc;
+  }
+
+  .header .links .schedule-dropbox li:nth-child(5) a {
+    font-size: 15px;
+    height: 50px;
+    width: 115px;
+    border-style: solid;
+    border-width: 0 2px 0 2px;
+    border-color: #ccc;
+  }
+
+  .videosec .text {
+
+    width: 288px;
+    height: 30px;
+    bottom: -13px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+
+
+
+
+
+
+  .container {
+    margin: 0 auto;
+    padding: 0px 8px;
+  }
+
+  .market .container {
+    grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+    gap: 10px;
+  }
+
+  .market .container .box .imgholder img {
+    width: 105px;
+    height: 150px;
+  }
+
+  .market .container .box .info h1 {
+    font-size: 20px;
+    margin: 10px auto;
+  }
+
+  .market .container .box .info h2 {
+    margin: 30px auto 10px auto;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .market .container .box .info p {
+    font-size: 12px;
+    margin: 0 0 30px 0;
+    padding: 0px 0px 5px 0px;
+    font-weight: 300;
+  }
+
+  .market .container .box .info h2 {
+    margin: 30px auto 10px auto;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .market .container .donate a {
+    margin-right: 8px;
+    margin-left: 8px;
+    text-align: center;
+    display: block;
+  }
+
+  .market .container .box:nth-child(2) a:hover span {
+    transform: translateX(0);
+  }
+
+  .footer {
+    padding: 15px 0 15px 0px;
+  }
+
+
+  .footer .container {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+  }
+
+  .footer .container .contact h2 {
+    font-size: 18px;
+  }
+
+  .footer .container .pages h2 {
+    font-size: 18px;
+  }
+
+  .footer .container .contact p {
+    font-size: 12px;
+  }
+
+  .footer .container .contact .social a {
+    font-size: 10px;
+  }
+
+  .footer .container .contact .social a i {
+    padding: 5px 10px 7px 0;
+  }
+
+  .footer .pages a {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+
 
 }
 

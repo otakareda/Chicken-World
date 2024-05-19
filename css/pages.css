@@ -721,4 +721,72 @@
 
 }
 
+
+
+@media (max-width: 420px) {
+
+    .header .links {
+        font-size: 12px;
+    }
+
+    .header .logo {
+        font-size: 13px;
+        font-weight: 900;
+    }
+
+    .header .links>li>a {
+        padding: 0 5px;
+        height: 50px;
+
+    }
+
+
+    .mediciene .card-containier {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        column-gap: 13px;
+        row-gap: 15px;
+        padding: 110px 0 50px;
+    }
+
+    .label-holder {
+        top: -65px;
+    }
+
+    .mediciene .card-containier:nth-child(odd)::before {
+        left: -8px;
+        width: calc(100% + 16px);
+    }
+
+    .mediciene .card-containier .front-face i {
+        font-size: 20px;
+    }
+
+    .mediciene .card-containier .front-face .stars-holder {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        width: 115px;
+    }
+
+    .mediciene .card-containier .card .front-face img {
+        width: 85%;
+        top: 58%;
+        transform: translateY(-50%);
+        left: -77px;
+    }
+
+    .mediciene .card {
+
+        height: 257px;
+    }
+
+    .mediciene .card-containier .card .front-face {
+        background-image: url(../imgs/icons/king22.jpg);
+
+    }
+
+
+
+}
+
 /* end chicks page */
