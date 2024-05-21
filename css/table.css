@@ -52,6 +52,14 @@ table {
 
 }
 
+.temperature table::before {
+    content: "";
+    display: block;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: #d35400;
+
+}
 
 table thead tr:nth-child(2) {
     background-color: #356600;
@@ -63,10 +71,9 @@ table thead tr:nth-child(1) {
 
 
 table caption {
-    width: inherit;
+    width: 100%;
     background-color: #ffef5e;
     top: -100px;
-    left: 100px;
     padding: 20px;
     border-radius: 6px;
     font-size: 25px;
@@ -105,19 +112,28 @@ table tbody tr:hover {
     background-color: #d35400;
 }
 
-.border {
-    height: 3480px;
-    width: 1320px;
+
+.colored-background {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.colored-background::before {
+    content: "";
+    height: calc(100% + 10px);
+    width: 93%;
     border-style: solid;
     border-width: 3px;
     border-color: #000000;
-    position: absolute;
-    top: 250px;
-    left: 100px;
     background-color: #f6af07;
     box-shadow: 0 0 10px #b9ce41;
+    position: absolute;
+    left: 3%;
 
 }
+
 
 
 
@@ -187,6 +203,109 @@ table tbody tr:hover {
 
 
 
+
+@media (min-width:1290px) {
+
+    .colored-background::before {
+        width: 85.5%;
+        left: 7%;
+        height: calc(100% + 40px);
+    }
+
+
+    table {
+        margin: 90px auto;
+
+    }
+
+    .temperature table caption {
+        width: 100%;
+        font-size: 26px;
+        top: -45px;
+    }
+
+    .temperature table caption i {
+        font-size: 26px;
+    }
+
+    .temperature table caption i {
+        margin: 0 90px;
+    }
+
+    .weight table caption {
+        width: 100%;
+        font-size: 26px;
+        top: -45px;
+    }
+
+    .weight table caption i {
+        font-size: 26px;
+    }
+
+    .weight table caption i {
+        margin: 0 90px;
+    }
+
+    .weight table caption i {
+        margin: 0 90px;
+    }
+
+    table thead {
+        font-size: 22px;
+    }
+
+    table tbody {
+        font-size: 22px;
+    }
+
+}
+
+
+@media (max-width:1289px) {
+
+    .temperature table caption i {
+        margin: 0 45px;
+        font-size: 22px;
+
+    }
+
+    .weight table caption i {
+        margin: 0 45px;
+        font-size: 22px;
+
+    }
+
+    table caption {
+        width: 100%;
+        font-size: 22px;
+        top: -45px;
+    }
+
+
+    table {
+        margin: 90px auto;
+
+    }
+
+    .colored-background::before {
+        width: 89.5%;
+        left: 5%;
+        height: calc(100% + 40px);
+
+    }
+
+
+    table thead {
+        font-size: 20px;
+    }
+
+    table tbody {
+        font-size: 20px;
+    }
+
+
+}
+
 @media (max-width:767px) {
     .header .links {
         font-size: 12px;
@@ -202,10 +321,6 @@ table tbody tr:hover {
         height: 50px;
     }
 
-
-
-
-
     .header .links .schedule-dropbox li i {
         padding-right: 5px;
         padding-left: 8px;
@@ -216,7 +331,10 @@ table tbody tr:hover {
         font-size: 13.8px;
     }
 
-
+    .colored-background::before {
+        width: 89%;
+        left: 5%;
+    }
 
     .border {
         height: 3020px;
@@ -225,10 +343,19 @@ table tbody tr:hover {
         left: 15px;
     }
 
+    table {
+        margin: 90px auto;
+
+    }
+
     table caption {
-        left: 0;
-        width: 370px;
+        width: 100%;
         font-size: 20px;
+        top: -45px;
+    }
+
+    table thead tr:first-child th {
+        width: 20%;
     }
 
 
@@ -292,5 +419,32 @@ table tbody tr:hover {
 
     .footer .container .contact .social a i {
         padding: 5px 20px 7px 0;
+    }
+}
+
+
+@media (max-width:470px) {
+
+    table caption {
+        width: 320px;
+        left: 0;
+        font-size: 16px;
+    }
+
+    table thead {
+        font-size: 15px;
+    }
+
+    table tbody {
+        font-size: 16px;
+    }
+
+    table thead tr:first-child th {
+        width: 36%;
+    }
+
+    .colored-background::before {
+        width: 93%;
+        left: 3%;
     }
 }

@@ -199,7 +199,7 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 175px;
+    width: 141px;
 }
 
 
@@ -267,11 +267,11 @@
 .chicks .card-containier:nth-child(odd)::before {
     content: "";
     z-index: -100;
-    width: 200%;
     height: 100%;
     background-color: var(--section-color);
     position: absolute;
-    left: -300px;
+    left: -3%;
+    width: calc(100% + 5.8%);
 }
 
 
@@ -302,8 +302,9 @@
     bottom: 315px;
     left: 80%;
     transform: translateX(-50%);
-    width: 175px;
+    width: 141px;
 }
+
 
 
 .chicks .card-containier .front-face i {
@@ -379,7 +380,7 @@
     position: relative;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .light .container .cell .image {
@@ -431,7 +432,6 @@
     cursor: default;
 }
 
-.light .container .cell .information i {}
 
 .light .cell .information h2 {
     margin-bottom: 50px;
@@ -511,8 +511,6 @@
 }
 
 
-
-
 @media (min-width : 992px) {
 
     .mediciene .card-containier:nth-child(odd)::before {
@@ -526,13 +524,7 @@
     }
 
 
-
 }
-
-
-
-
-
 
 
 @media (min-width : 1200px) {
@@ -545,20 +537,9 @@
 
     .mediciene .card-containier {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
     }
 
-
-
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -570,8 +551,10 @@
     }
 }
 
-@media (max-width : 767px) {
 
+
+
+@media (max-width : 767px) {
 
     .header {
         height: 50px;
@@ -605,12 +588,11 @@
 
     .label {
         font-size: 19px;
-        width: fit-content;
-        padding: 10px 5px;
+        margin: 0;
     }
 
     .label-holder {
-        top: -60px;
+        top: 50px;
     }
 
 
@@ -671,16 +653,15 @@
 
     .light .cell .information p {
         font-weight: bold;
-        font-size: 16px;
+        font-size: 14px;
         margin: 0;
         text-align: left;
-        width: 388px;
+        width: 350px;
         line-height: 1.5;
     }
 
 
     .chicks .card-containier {
-
         padding: 150px 0 50px;
     }
 
@@ -701,6 +682,29 @@
         padding: 120px 0 50px;
     }
 
+    .chicks .card-containier {
+        grid-template-columns: repeat(auto-fill, minmax(227px, 1fr));
+        gap: 15px;
+    }
+
+    .chicks .card-containier .front-face .stars-holder {
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 141px;
+    }
+
+    .chicks .card-containier .card .chicks-name {
+        bottom: 24%;
+        right: 10%;
+    }
+
+    .chicks .card-containier:nth-child(odd)::before {
+        width: calc(100% + 5.8%);
+        left: -3%;
+    }
+
     .mediciene .card-containier .card .back-face p {
         padding: 4px;
     }
@@ -717,14 +721,11 @@
         left: 0;
     }
 
-
-
 }
 
 
 
 @media (max-width: 420px) {
-
     .header .links {
         font-size: 12px;
     }
@@ -737,20 +738,29 @@
     .header .links>li>a {
         padding: 0 5px;
         height: 50px;
-
     }
 
 
     .mediciene .card-containier {
-        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
         column-gap: 13px;
         row-gap: 15px;
         padding: 110px 0 50px;
     }
 
-    .label-holder {
-        top: -65px;
+    .label {
+        font-size: 19px;
+        width: fit-content;
+        padding: 10px 5px;
+        margin: 0;
     }
+
+    .label-holder {
+        top: 50px;
+    }
+
+
+
 
     .mediciene .card-containier:nth-child(odd)::before {
         left: -8px;
@@ -785,6 +795,131 @@
 
     }
 
+
+
+    .chicks .card-containier:nth-child(odd)::before {
+        content: "";
+        z-index: -100;
+        width: calc(100% + 4%);
+        height: 100%;
+        background-color: var(--section-color);
+        position: absolute;
+        left: -2%;
+    }
+
+    .chicks .card-containier .front-face .stars-holder {
+
+        width: 141px;
+    }
+
+    .chicks .card-containier {
+        padding: 120px 0 50px;
+    }
+
+    .chicks .card-containier .card .chicks-name {
+        right: 75px;
+    }
+
+    .chicks .card-containier .card .back-face h2 {
+
+        font-size: 22px;
+    }
+
+    .chicks .card-containier .card .back-face p {
+        padding: 0 5px 0 0;
+        font-size: 14px;
+        font-weight: 900;
+    }
+
+}
+
+@media (min-width : 767px) {
+
+    .label {
+        font-size: 21px;
+        margin: 0;
+    }
+
+    .label-holder {
+        top: 50px;
+    }
+
+    .chicks .card-containier {
+        grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
+    }
+
+    .chicks .card-containier .card .chicks-name {
+        right: 55px;
+    }
+
+    .chicks .card-containier .front-face .stars-holder {
+        bottom: 2%;
+        left: 50%;
+    }
+
+
+
+
+}
+
+@media (min-width:992px) {
+    .market .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 21px;
+
+    }
+
+    .footer .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 0px;
+    }
+
+    .market .container .box:nth-child(2) a:hover span {
+        transform: translateX(90px);
+    }
+
+    .label {
+        font-size: 23px;
+        margin: 0;
+    }
+
+    .label-holder {
+        top: 50px;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .market .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 21px;
+
+    }
+
+    .footer .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 0px;
+    }
+
+    .market .container .box:nth-child(2) a:hover span {
+        transform: translateX(120px);
+    }
+
+    .chicks .card-containier:nth-child(odd)::before {
+        width: calc(100% + 17.5%);
+        height: 100%;
+        background-color: var(--section-color);
+        position: absolute;
+        left: -9%;
+    }
+
+    .chicks .card-containier .card .chicks-name {
+        right: 28%;
+    }
 
 
 }
