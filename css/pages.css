@@ -626,7 +626,7 @@
         content: "";
         width: 50px;
         height: 140px;
-        right: 35px;
+        right: 15px;
         top: -20px;
         border-bottom: 40px solid var(--main-color);
         border-left: 40px solid var(--main-color);
@@ -679,12 +679,12 @@
         grid-template-columns: repeat(auto-fill, minmax(193px, 1fr));
         column-gap: 10px;
         row-gap: 15px;
-        padding: 120px 0 50px;
+        padding: 150px 0 50px;
     }
 
     .chicks .card-containier {
         grid-template-columns: repeat(auto-fill, minmax(227px, 1fr));
-        gap: 15px;
+        gap: 40px;
     }
 
     .chicks .card-containier .front-face .stars-holder {
@@ -745,7 +745,7 @@
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
         column-gap: 13px;
         row-gap: 15px;
-        padding: 110px 0 50px;
+        padding: 150px 0 50px;
     }
 
     .label {
@@ -779,10 +779,10 @@
     }
 
     .mediciene .card-containier .card .front-face img {
-        width: 85%;
-        top: 58%;
+        width: 90%;
+        top: 55%;
         transform: translateY(-50%);
-        left: -77px;
+        left: -110px;
     }
 
     .mediciene .card {
