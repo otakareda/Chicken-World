@@ -618,7 +618,6 @@ body {
   color: white;
   background-color: var(--main-color);
   border-color: white;
-  height: 40px;
 }
 
 /* End Market */
@@ -935,10 +934,6 @@ body {
     display: block;
   }
 
-  .market .container .box a:hover {
-
-    height: 40px;
-  }
 
   .market .container .box:nth-child(2) a span {
 
