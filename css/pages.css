@@ -572,6 +572,8 @@ a {
     margin: 0 0 10px 0;
     background-color: #0075ff;
     padding: 12px;
+    height: 44px;
+    line-height: 15px;
 }
 
 .cycle .container .days-counter .bottoms {
@@ -593,6 +595,9 @@ a {
     border-style: solid;
     border-width: 1px;
     border-color: transparent;
+    height: 40px;
+    line-height: 15px;
+    font-size: 16px;
 }
 
 .cycle .container .days-counter [type="button"]:hover {
@@ -623,6 +628,8 @@ a {
     font-size: 22px;
     margin: 0 0 30px 0;
     flex-direction: row-reverse;
+    height: 85px;
+    align-items: center;
 }
 
 .cycle .container .mediciene {
@@ -656,6 +663,10 @@ a {
 .cycle .container .mediciene .cell h2 {
     margin: 0;
     padding: 10px;
+    height: 47.6px;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
 
 }
 
@@ -664,6 +675,7 @@ a {
     padding: 10px;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
 
 .cycle .container .mediciene .cell .flex p {
@@ -724,6 +736,8 @@ a {
     color: white;
     font-weight: bold;
     font-size: 22px;
+    height: 85px;
+    align-items: center;
 }
 
 
@@ -1085,6 +1099,32 @@ a {
         left: 50%;
     }
 
+    .light .container .cell .image {
+        height: 400px;
+        position: relative;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .light .container .cell .image::before {
+        width: 85px;
+        height: calc(85% + 80px);
+        left: 125px;
+        top: -40px;
+    }
+
+    .light .container .cell .image::after {
+        width: 80px;
+        height: 255px;
+        right: 50px;
+        top: -40px;
+    }
+
+    .light .container .cell .image img {
+        height: 85%;
+    }
 
 
 
@@ -1116,6 +1156,36 @@ a {
     .label-holder {
         top: 50px;
     }
+
+
+
+    .light .container .cell .image {
+        height: 400px;
+        position: relative;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .light .container .cell .image::before {
+        width: 85px;
+        height: calc(85% + 80px);
+        left: 260px;
+        top: -20px;
+    }
+
+    .light .container .cell .image::after {
+        width: 80px;
+        height: 255px;
+        right: 190px;
+        top: 10px;
+    }
+
+    .light .container .cell .image img {
+        height: 90%;
+    }
+
 
 }
 
@@ -1163,6 +1233,34 @@ a {
 
     .chicks .card-containier .card .chicks-name {
         right: 28%;
+    }
+
+
+    .light .container .cell .image {
+        height: 400px;
+        position: relative;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .light .container .cell .image::before {
+        width: 85px;
+        height: calc(85% + 80px);
+        left: 0;
+        top: -20px;
+    }
+
+    .light .container .cell .image::after {
+        width: 45px;
+        height: 280px;
+        right: -18px;
+        top: 10px;
+    }
+
+    .light .container .cell .image img {
+        height: 90%;
     }
 
 

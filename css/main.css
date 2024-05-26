@@ -624,6 +624,9 @@ body {
   margin: 50px auto;
   width: fit-content;
   color: var(--main-color);
+  height: 65px;
+  align-items: center;
+  display: flex;
 }
 
 .market .container .box .info h2 {
@@ -650,6 +653,7 @@ body {
   padding: 0px 25px 25px 25px;
   color: #777;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .market .container .box a {
@@ -1234,6 +1238,7 @@ body {
 /* end media for mobile  */
 
 
+
 @media (min-width:768px) {
   .market .container {
     grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
@@ -1288,6 +1293,7 @@ body {
     transform: translateX(90px);
   }
 
+
 }
 
 @media (min-width:1200px) {
@@ -1295,7 +1301,6 @@ body {
     background-image: url(../imgs/donate.jpg);
     width: 100%;
     height: 100%;
-
   }
 
   .header .logo:hover ::before {
