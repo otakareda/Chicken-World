@@ -100,7 +100,7 @@ a {
 .container {
 
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 
 }
 
@@ -131,7 +131,33 @@ a {
   justify-content: center;
   height: 57px;
   font-weight: bold;
+  position: relative;
+  overflow: hidden;
 
+}
+
+.header .logo::before {
+  content: "";
+  background-image: url(../imgs/dots.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: 4s;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header .logo:hover::before {
+  z-index: 10;
+  opacity: .3;
+  scale: 1.5;
+}
+
+.header .container .logo span {
+  z-index: 15;
 }
 
 .header .links {
@@ -380,6 +406,7 @@ body {
 .videosec {
   position: relative;
   background-color: var(--section-color);
+  height: 200%;
 }
 
 .videosec .vid {
@@ -434,11 +461,63 @@ body {
 .videosec .pages {
   margin-top: 50px;
   display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-rows: 50% 50%;
+  padding: 0 15px 0 15px;
+  height: 200px;
+  justify-content: space-between;
+}
+
+
+
+.mediciene-bottom {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cycle-bottom {
+  grid-column: 2/4;
+  grid-row: 1;
+
+}
+
+.chicks-bottom {
+  grid-column: 4;
+  grid-row: 1;
+
+}
+
+
+
+
+.weight-bottom {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.temperature-bottom {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.light-bottom {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.sells-bottom {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+/* 
+.videosec .pages {
+  margin-top: 50px;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   padding: 15px;
   gap: 20px;
-}
-
+} */
 
 .videosec .pages a {
   background-color: white;
@@ -451,6 +530,7 @@ body {
   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
   position: relative;
   transition: var(--main-transition);
+  text-align: center;
 }
 
 .videosec .pages a::before {
@@ -468,8 +548,8 @@ body {
 }
 
 .videosec .pages a i {
-  padding-left: 30px;
-  margin-right: 60px;
+  padding-left: 0;
+  padding-right: 20px;
 }
 
 
@@ -526,14 +606,11 @@ body {
 
 .market .container .box .imgholder {
   position: relative;
-
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
 
 .market .container .box .imgholder img {
-
-  width: 350px;
-  height: 205px;
+  width: 100%;
 }
 
 .market .container .box .info {
@@ -1211,10 +1288,21 @@ body {
     transform: translateX(90px);
   }
 
-
 }
 
 @media (min-width:1200px) {
+  .header .container .logo a::before {
+    background-image: url(../imgs/donate.jpg);
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .header .logo:hover ::before {
+    opacity: .5;
+  }
+
+
   .market .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));

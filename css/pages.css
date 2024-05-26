@@ -1,3 +1,41 @@
+/* start global */
+:root {
+
+    --main-color: #d35400;
+    --sec-color: #ffef5e;
+    --third-color: #b9ce41;
+    --fourth-color: #f6af07;
+    --fourth-color: #356600;
+    --section-color: #eef0f6;
+    --main-padding: 20px;
+    --main-transition: .5s;
+}
+
+* {
+
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "cairo", sans-serif;
+
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+
+}
+
 /* start label  */
 .label-holder {
     position: absolute;
@@ -199,7 +237,7 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 141px;
+    width: 169px;
 }
 
 
@@ -355,10 +393,11 @@
 
 .chicks .card-containier .card .back-face p {
     padding: 20px;
-    padding-top: 15px;
     text-align: right;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 22px;
+    padding-top: 0;
+    font-size: 16px;
 
 }
 
@@ -501,6 +540,195 @@
 
 /* end light */
 
+/* start cycle */
+.cycle {
+    height: 90vh;
+}
+
+.cycle .container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: " counter info info info info ";
+
+}
+
+.cycle .container .days-counter {
+    grid-area: counter;
+    background-color: var(--section-color);
+    margin-right: 10px;
+    margin-top: 30px;
+    height: fit-content;
+
+
+}
+
+
+
+.cycle .container .days-counter h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    background-color: #0075ff;
+    padding: 12px;
+}
+
+.cycle .container .days-counter .bottoms {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cycle .container .days-counter [type="button"] {
+    margin: 0 2px 8px;
+    color: #666;
+    transition: var(--main-transition);
+    border: none;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+}
+
+.cycle .container .days-counter [type="button"]:hover {
+    color: var(--main-color);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--main-color);
+    transition: var(--main-transition);
+
+}
+
+.cycle .container .day-info {
+    grid-area: info;
+    background-color: #f2f2f2;
+    background-color: var(--section-color);
+    height: calc(100% - 30px);
+    margin-top: 30px;
+}
+
+.cycle .container .every-day {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #0075ff;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    flex-direction: row-reverse;
+}
+
+.cycle .container .mediciene {
+    position: relative;
+    text-align: right;
+    margin: 0 50px;
+    counter-reset: steps;
+}
+
+.cycle .container .mediciene::before {
+    content: "";
+    background-color: #c2c2c2;
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+}
+
+.cycle .container .mediciene .cell {
+    margin-bottom: 30px;
+    background-color: white;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
+.cycle .container .mediciene .cell h2 {
+    margin: 0;
+    padding: 10px;
+
+}
+
+.cycle .container .mediciene .cell .flex {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cycle .container .mediciene .cell .flex p {
+    margin: 0;
+}
+
+.cycle .cell:before {
+    counter-increment: steps;
+    content: counter(steps);
+    position: absolute;
+    right: -61px;
+    top: 28px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    -webkit-box-shadow: 0 0 20px #ccc;
+    -moz-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px #ccc;
+    padding-right: 1px;
+}
+
+.cycle .cell::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 40px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.cycle .cell:nth-child(1):before {
+    background-color: #00a8ff;
+}
+
+.cycle .cell:nth-child(2):before {
+    background-color: #e84118;
+}
+
+.cycle .cell:nth-child(3):before {
+    background-color: #356600;
+}
+
+
+.cycle .container .note {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #0075ff;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+/* end cycle */
 
 @media (min-width : 767px) {
 
@@ -892,6 +1120,22 @@
 }
 
 @media (min-width:1200px) {
+    .header .container .logo a::before {
+        background-image: url(../imgs/donate.jpg);
+        opacity: 1;
+        width: 100%;
+
+    }
+
+    .header .logo:hover ::before {
+        opacity: .5;
+    }
+
+    .header .container .logo span {
+        z-index: 15;
+    }
+
+
     .market .container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
