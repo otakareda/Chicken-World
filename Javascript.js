@@ -1,5 +1,4 @@
 function d1() {
-  alert("Day 1");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;1";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;42";
@@ -10,7 +9,6 @@ function d1() {
 }
 
 function d2() {
-  alert("DAY 2");
   // Start every-day
 
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;2";
@@ -21,7 +19,6 @@ function d2() {
   // End every-day
 }
 function d3() {
-  alert("Day 3");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;3";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;74";
@@ -32,7 +29,6 @@ function d3() {
 }
 
 function d4() {
-  alert("DAY 4");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;4";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;90";
@@ -42,7 +38,6 @@ function d4() {
   // End every-day
 }
 function d5() {
-  alert("Day 5");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;5";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;109";
@@ -52,7 +47,6 @@ function d5() {
   // End every-day
 }
 function d6() {
-  alert("Day 6");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;6";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;42";
@@ -63,7 +57,6 @@ function d6() {
 }
 
 function d2a() {
-  alert("DAY 2");
   // Start every-day
 
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;2";
@@ -74,7 +67,6 @@ function d2a() {
   // End every-day
 }
 function d3() {
-  alert("Day 3");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;3";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;74";
@@ -85,7 +77,6 @@ function d3() {
 }
 
 function d4() {
-  alert("DAY 4");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;4";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;90";
@@ -95,7 +86,6 @@ function d4() {
   // End every-day
 }
 function d5() {
-  alert("Day 5");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;5";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;109";
@@ -105,7 +95,6 @@ function d5() {
   // End every-day
 }
 function d1() {
-  alert("Day 1");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;1";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;42";
@@ -116,7 +105,6 @@ function d1() {
 }
 
 function d2() {
-  alert("DAY 2");
   // Start every-day
 
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;2";
@@ -127,7 +115,6 @@ function d2() {
   // End every-day
 }
 function d3() {
-  alert("Day 3");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;3";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;74";
@@ -138,7 +125,6 @@ function d3() {
 }
 
 function d4() {
-  alert("DAY 4");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;4";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;90";
@@ -148,7 +134,6 @@ function d4() {
   // End every-day
 }
 function d5() {
-  alert("Day 5");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;5";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;109";
@@ -158,7 +143,6 @@ function d5() {
   // End every-day
 }
 function d1() {
-  alert("Day 1");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;1";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;42";
@@ -169,7 +153,6 @@ function d1() {
 }
 
 function d2() {
-  alert("DAY 2");
   // Start every-day
 
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;2";
@@ -180,7 +163,6 @@ function d2() {
   // End every-day
 }
 function d3() {
-  alert("Day 3");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;3";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;74";
@@ -191,7 +173,6 @@ function d3() {
 }
 
 function d4() {
-  alert("DAY 4");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;4";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;90";
@@ -201,7 +182,6 @@ function d4() {
   // End every-day
 }
 function d5() {
-  alert("Day 5");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;5";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;109";
@@ -211,7 +191,6 @@ function d5() {
   // End every-day
 }
 function d1() {
-  alert("Day 1");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;1";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;42";
@@ -222,7 +201,6 @@ function d1() {
 }
 
 function d2() {
-  alert("DAY 2");
   // Start every-day
 
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;2";
@@ -233,7 +211,6 @@ function d2() {
   // End every-day
 }
 function d3() {
-  alert("Day 3");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;3";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;74";
@@ -244,7 +221,6 @@ function d3() {
 }
 
 function d4() {
-  alert("DAY 4");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;4";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;90";
@@ -254,7 +230,6 @@ function d4() {
   // End every-day
 }
 function d5() {
-  alert("Day 5");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;5";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;109";
@@ -264,7 +239,6 @@ function d5() {
   // End every-day
 }
 function d1() {
-  alert("Day 1");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;1";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;42";
@@ -275,7 +249,6 @@ function d1() {
 }
 
 function d2() {
-  alert("DAY 2");
   // Start every-day
 
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;2";
@@ -286,7 +259,6 @@ function d2() {
   // End every-day
 }
 function d3() {
-  alert("Day 3");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;3";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;74";
@@ -297,7 +269,6 @@ function d3() {
 }
 
 function d4() {
-  alert("DAY 4");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;4";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;90";
@@ -307,7 +278,6 @@ function d4() {
   // End every-day
 }
 function d5() {
-  alert("Day 5");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;5";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;109";
@@ -317,7 +287,6 @@ function d5() {
   // End every-day
 }
 function d1() {
-  alert("Day 1");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;1";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;42";
@@ -328,7 +297,6 @@ function d1() {
 }
 
 function d2() {
-  alert("DAY 2");
   // Start every-day
 
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;2";
@@ -339,7 +307,6 @@ function d2() {
   // End every-day
 }
 function d3() {
-  alert("Day 3");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;3";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;74";
@@ -350,7 +317,6 @@ function d3() {
 }
 
 function d4() {
-  alert("DAY 4");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;4";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;90";
@@ -360,7 +326,6 @@ function d4() {
   // End every-day
 }
 function d5() {
-  alert("Day 5");
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;5";
   document.getElementById("wights").innerHTML = "الوزن &nbsp;&nbsp;109";
