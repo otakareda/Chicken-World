@@ -466,6 +466,8 @@ body {
   padding: 0 15px 0 15px;
   height: 200px;
   justify-content: space-between;
+  text-wrap: nowrap;
+
 }
 
 
@@ -944,32 +946,35 @@ body {
 
   .videosec .pages {
     margin-top: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px; */
     padding: 7px;
-    gap: 15px;
     padding-bottom: 30px;
   }
 
   .videosec .pages a i {
-    padding-left: 10px;
-    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 5px;
+    font-size: 15px;
   }
 
   .videosec .pages a {
     height: 60px;
     line-height: 60px;
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .market .container {
-    grid-template-columns: repeat(auto-fill, minmax(166px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(166px, 1fr)); */
+    grid-template-columns: 31% 31% 31%;
+    justify-content: center;
     gap: 15px;
     height: 87vh;
   }
 
   .market .container .box {
 
-    height: calc(100vh - 255px);
+    height: calc(100vh - 200px);
   }
 
 
@@ -1042,7 +1047,8 @@ body {
   }
 
   .footer .container {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: 31% 31% 31%;
+    justify-content: center;
     gap: 10px;
   }
 
@@ -1141,6 +1147,16 @@ body {
   }
 
 
+  .videosec .pages {
+    margin-top: 40px;
+    padding: 7px;
+    padding-bottom: 30px;
+    text-wrap: nowrap;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: none;
+    justify-content: normal;
+  }
 
 
 
@@ -1239,7 +1255,20 @@ body {
 
 
 
-@media (min-width:768px) {
+@media (min-width:767px) {
+  .videosec .pages a i {
+    padding-right: 20px;
+  }
+
+  .videosec .pages a {
+
+    font-size: 22px;
+  }
+
+
+
+
+
   .market .container {
     grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
     gap: 15px;

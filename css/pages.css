@@ -579,7 +579,7 @@ a {
 .cycle .container .days-counter .bottoms {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -963,6 +963,69 @@ a {
         left: 0;
     }
 
+
+    .cycle .container .days-counter [type="button"] {
+        padding: 4px;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .cycle .container .every-day {
+        font-size: 14px;
+        padding: 0;
+
+    }
+
+    .cycle .container .mediciene .cell {
+
+        font-size: 14px;
+    }
+
+    .cycle .container .note {
+        padding: 0 10px;
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .cycle .container .note i {
+        color: yellow;
+        padding-left: 6px;
+    }
+
+    .cycle .container .days-counter h2 {
+        font-size: 16px;
+    }
+
+    .cycle .container {
+        display: grid;
+        grid-template-areas: " counter counter counter counter counter "
+            "info info info info info";
+    }
+
+    .cycle .container .days-counter {
+        margin-right: 0;
+        margin-top: 15px;
+    }
+
+    .cycle .container .day-info {
+        margin-top: 10px;
+    }
+
+    .cycle .container .days-counter {
+        margin-right: 0;
+    }
+
+    .cycle .container .every-day {
+        height: 54px;
+    }
+
+    .cycle .container .mediciene .cell {
+        padding: 0 10px;
+
+        margin-bottom: 20px;
+
+    }
+
 }
 
 
@@ -1073,6 +1136,11 @@ a {
         font-weight: 900;
     }
 
+    .cycle .container .days-counter {
+        margin-top: 30px;
+    }
+
+
 }
 
 @media (min-width : 767px) {
@@ -1125,6 +1193,14 @@ a {
     .light .container .cell .image img {
         height: 85%;
     }
+
+    .cycle .container .days-counter [type="button"] {
+        padding: 5px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+
 
 
 
