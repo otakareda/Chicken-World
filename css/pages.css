@@ -666,7 +666,7 @@ a {
     align-items: center;
     display: flex;
     flex-direction: row-reverse;
-
+    text-wrap: nowrap;
 }
 
 .cycle .container .mediciene .cell .flex {
@@ -1000,7 +1000,7 @@ a {
     }
 
     .cycle .container .days-counter h2 {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .cycle .container {
@@ -1147,7 +1147,13 @@ a {
         margin-top: 30px;
     }
 
+    .cycle .container .mediciene .cell h2 {
+        font-size: 15px;
+    }
 
+    .cycle .container .mediciene {
+        margin: 0 50px 0 30px;
+    }
 }
 
 @media (min-width : 767px) {
