@@ -8,15 +8,13 @@ function d1() {
   // End every-day
 
   // Start Mediciene
-  document.getElementById("id-first-mid").innerHTML = "عسل او سكر ";
-  document.getElementById("id-sec-mid").innerHTML = "رافع مناعه ";
-  document.getElementById("id-third-mid").innerHTML = "مضاد حيوي ";
+  document.getElementById("id-first-mid").innerHTML =
+    "عسل او سكر او محلول معالجة الجفاف";
 
-  document.getElementById("id-first-time").innerHTML = "8";
-  document.getElementById("id-sec-time").innerHTML = "8";
-  document.getElementById("id-third-time").innerHTML = "8";
+  document.getElementById("id-first-time").innerHTML = "24";
 
-  document.getElementById("hide-cell-three").style.display = "";
+  document.getElementById("hide-cell-two").style.display = "none";
+  document.getElementById("hide-cell-three").style.display = "none";
 
   // End Mediciene
 
@@ -37,20 +35,21 @@ function d2() {
   // End every-day
 
   // Start Mediciene
-  document.getElementById("id-first-mid").innerHTML = " ";
-  document.getElementById("id-sec-mid").innerHTML = " ";
-  document.getElementById("id-third-mid").innerHTML = " ";
+  document.getElementById("id-first-mid").innerHTML =
+    " أ د 3 هـ + املاح معدنية + كوميت";
+  document.getElementById("id-sec-mid").innerHTML = " بان فلور (مضاد حيوي)";
 
-  document.getElementById("id-first-time").innerHTML = "8";
-  document.getElementById("id-sec-time").innerHTML = "8";
-  document.getElementById("id-third-time").innerHTML = "8";
+  document.getElementById("id-first-time").innerHTML = "12";
+  document.getElementById("id-sec-time").innerHTML = "12";
 
+  document.getElementById("hide-cell-two").style.display = "";
   document.getElementById("hide-cell-three").style.display = "none";
 
   // End Mediciene
 
   // Start note
-  document.getElementById("note").innerHTML = "ملاحظة :- الاحا بربع جنيه مصري ";
+  document.getElementById("note").innerHTML =
+    "ملاحظة :- يتم استخدام السقاية البلاستيك حتى عمر 7 ايام ";
   // End note
 }
 function d3() {
@@ -63,17 +62,21 @@ function d3() {
   // End every-day
 
   // Start Mediciene
-  document.getElementById("id-first-mid").innerHTML = " ";
-  document.getElementById("id-sec-mid").innerHTML = " ";
-  document.getElementById("id-third-mid").innerHTML = " ";
+  document.getElementById("id-first-mid").innerHTML =
+    " أ د 3 هـ + املاح معدنية + كوميت";
+  document.getElementById("id-sec-mid").innerHTML = " بان فلور (مضاد حيوي)";
 
-  document.getElementById("id-first-time").innerHTML = "8";
-  document.getElementById("id-sec-time").innerHTML = "8";
-  document.getElementById("id-third-time").innerHTML = "8";
+  document.getElementById("id-first-time").innerHTML = "12";
+  document.getElementById("id-sec-time").innerHTML = "12";
+
+  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-three").style.display = "none";
+
   // End Mediciene
 
   // Start note
-  document.getElementById("note").innerHTML = "ملاحظة :- ";
+  document.getElementById("note").innerHTML =
+    "ملاحظة :- يتم استخدام السقاية البلاستيك حتى عمر 7 ايام ";
   // End note
 }
 
@@ -87,19 +90,24 @@ function d4() {
   // End every-day
 
   // Start Mediciene
-  document.getElementById("id-first-mid").innerHTML = " ";
-  document.getElementById("id-sec-mid").innerHTML = " ";
-  document.getElementById("id-third-mid").innerHTML = " ";
+  document.getElementById("id-first-mid").innerHTML =
+    " أ د 3 هـ + املاح معدنية + كوميت";
+  document.getElementById("id-sec-mid").innerHTML = " بان فلور (مضاد حيوي)";
 
-  document.getElementById("id-first-time").innerHTML = "8";
-  document.getElementById("id-sec-time").innerHTML = "8";
-  document.getElementById("id-third-time").innerHTML = "8";
+  document.getElementById("id-first-time").innerHTML = "12";
+  document.getElementById("id-sec-time").innerHTML = "12";
+
+  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-three").style.display = "none";
+
   // End Mediciene
 
   // Start note
-  document.getElementById("note").innerHTML = "ملاحظة :- ";
+  document.getElementById("note").innerHTML =
+    "ملاحظة :- يتم استخدام السقاية البلاستيك حتى عمر 7 ايام ";
   // End note
 }
+
 function d5() {
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;5";
@@ -110,19 +118,24 @@ function d5() {
   // End every-day
 
   // Start Mediciene
-  document.getElementById("id-first-mid").innerHTML = " ";
-  document.getElementById("id-sec-mid").innerHTML = " ";
-  document.getElementById("id-third-mid").innerHTML = " ";
+  document.getElementById("id-first-mid").innerHTML =
+    " أ د 3 هـ + املاح معدنية + كوميت";
+  document.getElementById("id-sec-mid").innerHTML = " بان فلور (مضاد حيوي)";
 
-  document.getElementById("id-first-time").innerHTML = "8";
-  document.getElementById("id-sec-time").innerHTML = "8";
-  document.getElementById("id-third-time").innerHTML = "8";
+  document.getElementById("id-first-time").innerHTML = "12";
+  document.getElementById("id-sec-time").innerHTML = "12";
+
+  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-three").style.display = "none";
+
   // End Mediciene
 
   // Start note
-  document.getElementById("note").innerHTML = "ملاحظة :- ";
+  document.getElementById("note").innerHTML =
+    "ملاحظة :- يتم استخدام السقاية البلاستيك حتى عمر 7 ايام ";
   // End note
 }
+
 function d6() {
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;6";
@@ -133,17 +146,20 @@ function d6() {
   // End every-day
 
   // Start Mediciene
-  document.getElementById("id-first-mid").innerHTML = " ";
-  document.getElementById("id-sec-mid").innerHTML = " ";
-  document.getElementById("id-third-mid").innerHTML = " ";
+  document.getElementById("id-first-mid").innerHTML = "  هـ سيلينيوم ";
+  document.getElementById("id-sec-mid").innerHTML = "  ماء صافى بدون علاج ";
 
-  document.getElementById("id-first-time").innerHTML = "8";
-  document.getElementById("id-sec-time").innerHTML = "8";
-  document.getElementById("id-third-time").innerHTML = "8";
+  document.getElementById("id-first-time").innerHTML = "12";
+  document.getElementById("id-sec-time").innerHTML = "12";
+
+  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-three").style.display = "none";
+
   // End Mediciene
 
   // Start note
-  document.getElementById("note").innerHTML = "ملاحظة :- ";
+  document.getElementById("note").innerHTML =
+    "ملاحظة :- يتم استخدام السقاية البلاستيك حتى عمر 7 ايام ";
   // End note
 }
 
@@ -158,19 +174,24 @@ function d7() {
   // End every-day
 
   // Start Mediciene
-  document.getElementById("id-first-mid").innerHTML = " ";
-  document.getElementById("id-sec-mid").innerHTML = " ";
-  document.getElementById("id-third-mid").innerHTML = " ";
+  document.getElementById("id-first-mid").innerHTML = "تحصين هتشنر اي بي ";
+  document.getElementById("id-sec-mid").innerHTML = " ماء صافي بدون علاج";
+  document.getElementById("id-third-mid").innerHTML = " هـ سيلينيوم";
 
-  document.getElementById("id-first-time").innerHTML = "8";
-  document.getElementById("id-sec-time").innerHTML = "8";
-  document.getElementById("id-third-time").innerHTML = "8";
+  document.getElementById("id-first-time").innerHTML = "1";
+  document.getElementById("id-sec-time").innerHTML = "11";
+  document.getElementById("id-third-time").innerHTML = "12";
+
+  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-three").style.display = "";
+
   // End Mediciene
 
   // Start note
-  document.getElementById("note").innerHTML = "ملاحظة :- ";
-  // End note
+  document.getElementById("note").innerHTML =
+    "ملاحظة :- يتم استخدام السقاية البلاستيك حتى عمر 7 ايام "; // End note
 }
+
 function d8() {
   // Start every-day
   document.getElementById("days").innerHTML = "اليوم &nbsp;&nbsp;8";
@@ -181,17 +202,21 @@ function d8() {
   // End every-day
 
   // Start Mediciene
-  document.getElementById("id-first-mid").innerHTML = " ";
-  document.getElementById("id-sec-mid").innerHTML = " ";
-  document.getElementById("id-third-mid").innerHTML = " ";
+  document.getElementById("id-first-mid").innerHTML =
+    " أ د 3 هـ + املاح معدنية + كوميت";
+  document.getElementById("id-sec-mid").innerHTML = " حلبة + عسل اسود";
 
-  document.getElementById("id-first-time").innerHTML = "8";
-  document.getElementById("id-sec-time").innerHTML = "8";
-  document.getElementById("id-third-time").innerHTML = "8";
+  document.getElementById("id-first-time").innerHTML = "12";
+  document.getElementById("id-sec-time").innerHTML = "12";
+
+  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-three").style.display = "none";
+
   // End Mediciene
 
   // Start note
-  document.getElementById("note").innerHTML = "ملاحظة :- ";
+  document.getElementById("note").innerHTML =
+    "ملاحظة :- من اليوم يتم استخدام الماء في خط النبل ";
   // End note
 }
 

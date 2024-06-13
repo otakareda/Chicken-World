@@ -714,6 +714,14 @@ a {
     border-color: transparent transparent transparent #fff;
 }
 
+.cycle .container .mediciene .sec {
+    display: none;
+}
+
+.cycle .container .mediciene .third {
+    display: none;
+}
+
 .cycle .cell:nth-child(1):before {
     background-color: #00a8ff;
 }
