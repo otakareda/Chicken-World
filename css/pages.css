@@ -411,7 +411,6 @@ a {
 
 
 /* start light */
-.light {}
 
 .light .container .cell {
     display: flex;
@@ -986,7 +985,7 @@ a {
 
     .cycle .container .mediciene .cell {
 
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .cycle .container .note {

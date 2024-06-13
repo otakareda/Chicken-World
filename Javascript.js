@@ -42,7 +42,7 @@ function d2() {
   document.getElementById("id-first-time").innerHTML = "12";
   document.getElementById("id-sec-time").innerHTML = "12";
 
-  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-two").style.display = "block";
   document.getElementById("hide-cell-three").style.display = "none";
 
   // End Mediciene
@@ -69,7 +69,7 @@ function d3() {
   document.getElementById("id-first-time").innerHTML = "12";
   document.getElementById("id-sec-time").innerHTML = "12";
 
-  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-two").style.display = "block";
   document.getElementById("hide-cell-three").style.display = "none";
 
   // End Mediciene
@@ -97,7 +97,7 @@ function d4() {
   document.getElementById("id-first-time").innerHTML = "12";
   document.getElementById("id-sec-time").innerHTML = "12";
 
-  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-two").style.display = "block";
   document.getElementById("hide-cell-three").style.display = "none";
 
   // End Mediciene
@@ -125,7 +125,7 @@ function d5() {
   document.getElementById("id-first-time").innerHTML = "12";
   document.getElementById("id-sec-time").innerHTML = "12";
 
-  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-two").style.display = "block";
   document.getElementById("hide-cell-three").style.display = "none";
 
   // End Mediciene
@@ -152,7 +152,7 @@ function d6() {
   document.getElementById("id-first-time").innerHTML = "12";
   document.getElementById("id-sec-time").innerHTML = "12";
 
-  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-two").style.display = "block";
   document.getElementById("hide-cell-three").style.display = "none";
 
   // End Mediciene
@@ -182,8 +182,8 @@ function d7() {
   document.getElementById("id-sec-time").innerHTML = "11";
   document.getElementById("id-third-time").innerHTML = "12";
 
-  document.getElementById("hide-cell-two").style.display = "";
-  document.getElementById("hide-cell-three").style.display = "";
+  document.getElementById("hide-cell-two").style.display = "block";
+  document.getElementById("hide-cell-three").style.display = "block";
 
   // End Mediciene
 
@@ -209,7 +209,7 @@ function d8() {
   document.getElementById("id-first-time").innerHTML = "12";
   document.getElementById("id-sec-time").innerHTML = "12";
 
-  document.getElementById("hide-cell-two").style.display = "";
+  document.getElementById("hide-cell-two").style.display = "block";
   document.getElementById("hide-cell-three").style.display = "none";
 
   // End Mediciene
